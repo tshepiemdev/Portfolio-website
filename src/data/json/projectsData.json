@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "projImgURL": "https://res.cloudinary.com/dea3pml8w/image/upload/v1765190908/tshepiem.dev_ebvzhu.png",
+      "projName": "tshepiem.dev - My portfolio website platform",
+      "projType": "Website",
+      "projDescription": "Tshepang Mmathebe Kgaphola/tshepiem.dev is a Software Developer based in South Africa",
+      "projStatus": "Deployed",
+      "projFor": "personal",
+      "projStack": "HTML, CSS, JavaScript, Node.js, Express.js",
+      "projOpenLiveLink": "already_here",
+      "projRepoLink": "https://github.com/tshepiemdev"
+    }
+  ]
+}
+

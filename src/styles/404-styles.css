@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,1432,100900;1,1432,100900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@1296,200800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+@font-face {
+    font-family: interFont;
+    src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf');
+}
+
+@font-face {
+    font-family: bricolageFont;
+    src: url('/assets/fonts/BricolageGrotesqueRegular.otf');
+}
+
+@font-face {
+    font-family: instrumentSerifFont;
+    src: url('/assets/fonts/InstrumentSerif-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #040404F7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    background-color: #1E1E1E;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 360px;
+}
+
+img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+h1 {
+    font-size: clamp(1rem, 1.8rem, 3rem);
+    text-align: center;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.subtext {
+    font-size: clamp(0.5rem, 0.8rem, 1rem);
+    text-align: center;
+    color: #CCCCCC;
+    opacity: 80%;
+    margin-bottom: 2rem;
+}
+
+button {
+    width: 100px;
+    height: 48px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 360px;
+    border: none;
+    text-align: center;
+    margin-bottom: 38px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1E1E1E;
+    color: white;
+    border: 1px solid #272727;
+}
+
+.gethelp {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gethelp:hover {
+    opacity: 50%;
+}
+
+.help-container {
+    background-color: #1E1E1E;
+    border-radius: 28px;
+    border: none;
+    padding: 24px;
+    width: fit-content;
+}
+
+.help-container h2 {
+   line-height: 1.3; 
+   margin-bottom: 8px;
+
+}
+
+.left-container p {
+    color: #CCCCCC;
+    opacity: 80%;
+    line-height: 1.1;
+    font-size: 14px;
+}
+
+#closeHelpView {
+    background-color: #545454;
+    width: 42px;
+    height: 42px;
+    border-radius: 360px;
+    display: grid;
+    place-content: center;
+    margin-left: 68px;
+}
+
+#closeHelpView img {
+    width: 14px;
+    height: 14px;
+}
+
+#closeHelpView:hover {
+    opacity: 50%;
+}
+
+.social-links {
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-links:hover {
+    color: #A2FF3F;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.top-container {
+    display: flex;
+    justify-content: right;
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #545454;
+}
+
+.help-container-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    place-content: center;
+    position: fixed;
+    z-index: 999;
+}

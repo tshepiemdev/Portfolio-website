@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me | Get in touch with me</title>
+    <meta name="description" content="Get in touch with me by filling out the form below, or alternatively, by giving me a quick call using the contact details provided below the form.">
+    <meta name="author" content="Tshepang MMathebe Kgaphola as tshepiem.dev">
+    <meta property="og:title" content="Contact me | Get in touch with me">
+    <meta property="og:description" content="Get in touch with me by filling out the form below, or alternatively, by giving me a quick call using the contact details provided below the form.">
+    <meta property="og:image" content="https://tshepiem.dev/assets/images/my-photos/myphoto%20(1).png">
+    <meta property="og:url" content="https://tshepiem.dev/contact">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="src/styles/contact-styles.css">
+    <script src="src/js/email-config.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="src/js/contact.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW1KJQS6PX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-KW1KJQS6PX');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/favicon-180.png">
+</head>
+<body>
+    <div id="bottomMenuWrapper">
+        <div id="workingOnItView">
+            <img src="assets\images\icons\error-yellow.svg" alt="download" width="24px" height="24px">
+            <p>Working on it</p>
+        </div>
+        <div id="bottomMenuOptions" class="more-options">
+            <p>Appearance</p>
+            <hr>
+            <div class="theme-options">
+                <label>
+                    <span>Light</span>
+                    <input type="radio" name="theme" value="light" checked>
+                </label>
+                <label class="themeLabel">
+                    <span>Dark</span>
+                    <input type="radio" name="theme" value="dark">
+                </label>
+                <label class="themeLabel">
+                    <span>System</span>
+                    <input type="radio" name="theme" value="system">
+                </label>
+            </div>
+           <button id="downloadCVFloat" class="all-download-cv-buttons">Download CV</button>
+        </div>
+        <div id="bottomMenu">
+            <button id="btnToHome"><img src="assets\images\icons\house-blank.svg" alt="home" width="24px" height="24px"><a href="index.html">Home</a></button>
+            <hr>
+            <button id="btnMoreOptions"><img src="assets\images\icons\cross-small.svg" id="optionsIcon" alt="download" width="24px" height="24px"><span id="toolTip" class="custom-tooltip">More options</span></button>
+        </div>
+    </div>
+
+    <form id="contactForm" novalidate>
+        <img src="https://cdn.dribbble.com/userupload/6888370/file/original-4a1f4840a643a0f559fcc23341e9d564.png?resize=1504x1504&vertical=center" id="top-img" alt="contact" width="100px" height="60px">
+        <div class="top-wrapper">
+            <h1>Get in touch <span>with me</span></h1>
+            <p>Let's find out how we can work or collaborate together.</p>
+        </div>
+
+        <div class="namesWrapper">
+            <div class="nameWrap">
+                <label for="txtFirstName">Your First Name <span>*</span></label><br>
+                <input type="text" id="txtFirstName" name="firstname" minlength="2" maxlength="40" autocomplete="off" required><br>
+            </div>
+            <div class="nameWrap">
+                <label>Your Last Name <span>*</span></label><br>
+                <input type="text" id="txtLastName" name="lastname" minlength="2" maxlength="50" autocomplete="off" required><br>
+            </div>
+        </div>
+        
+        <label>Email Address <span>*</span></label><br>
+        <input type="email" id="txtEmail" name="email" minlength="2" maxlength="100" autocomplete="off" required><br>
+
+        <label>You're contacting as <span>*</span></label><br>
+        <div class="statusWrapper">
+            <div class="radio-wrapper">
+                <input type="radio" id="btnIndividual" name="position" value="Individual">
+                <label for="btnIndividual">Individual</label><br>
+            </div>
+            <div class="radio-wrapper">
+                <input type="radio" id="btnBusiness" name="position" value="Business">
+                <label for="btnBusiness">Business</label><br>
+            </div>
+        </div>
+
+        <label>Reason for contact <span>*</span> <span2>(Select areas of your contact)</span2></label><br>
+        
+        <div class="checkboxMainWrapper">
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="reasonCheckboxes" id="chkJob" name="contactreason" value="Job Offer">
+                <label for="chkJob">Job offer</label><br>
+
+                <input type="checkbox" class="reasonCheckboxes" id="development" name="contactreason" value="Development">
+                <label for="development">Development</label><br>
+
+                <input type="checkbox" class="reasonCheckboxes" id="uiux" name="contactreason" value="UI/UX Design">
+                <label for="uiux">UI/UX Design</label><br>
+
+            </div>
+
+            <div class="checkboxWrapper">
+                <input type="checkbox" class="reasonCheckboxes" id="illu" name="contactreason" value="Illustrations/Graphics">
+                <label for="illu">Illustration/Graphics</label><br>
+
+                <input type="checkbox" id="chkOther" name="contactreason" value="Other/Not yet sure">
+                <label for="chkOther">Other/Not yet sure</label><br>
+            </div>
+        </div>
+        
+        <label>Tell me more details about your contact<span2> (Optional)</span2></label><br>
+        <textarea id="txtMessage" placeholder="Details here" rows="5" cols="70" maxlength="1000" spellcheck="true" autocomplete="off" name="message"></textarea><br>
+
+        <button type="submit" id="btnSubmit">Submit</button>
+
+        <div class="altcontact-wrapper">
+            <div class="blur-view">
+                <h2>Not sure yet?</h2>
+                <button type="button" id="btnCallMe"><a href="tel:+27661271993">Call me</a><div><img src="assets/images/icons/angle-small-right.svg"></div></button>
+                <div class="or-container">
+                    <hr><p>or text me here</p><hr>
+                </div>
+
+                <div class="social-icon-links">
+                    <a href="https://www.instagram.com/tshepiem.dev" target="_blank"><img src="assets\images\icons\instagram.svg" alt="Instagram" width="100%" height="24px"></a>
+                    <a href="https://m.facebook.com/61584667896867/" target="_blank"><img src="assets\images\icons\facebook-messenger.svg" alt="Messeger" width="100%" height="24px"></a>
+                    <a href="mailto:tshepiem.dev" target="_blank"><img src="assets\images\icons\envelope.svg" alt="Email" width="100%" height="24px"></a>
+                    <a href="https://x.com/tshepiemdev" target="_blank"><img src="assets\images\icons\twitter-alt.svg" alt="Twitter/X" width="100%" height="24px"></a>
+                    <a href="https://dribbble.com/tshepiemdev" target="_blank"><img src="assets\images\icons\dribbble.svg" alt="Dribbble" width="100%" height="24px"></a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- <div class="notications-view">
+        <div id="statusNotification">
+            <img src="assets/images/icons/success.svg">
+            <div class="text-wrapper">
+                <p>Mail sent successfully as</p>
+                <p id="lblUserMail">yourname@company.com</p>
+                <p id="lblCountDownView">• closing in -</p>
+            </div>
+            <img src="assets/images/icons/cancel.svg" id="closeNotification">
+        </div>
+    </div> -->
+
+    <!-- Loader -->
+     <div class="loader-overlay" id="loaderView">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <p>Processing<br>your mail</p>
+        </div>
+     </div>
+
+     <!-- Download cv pop up -->
+    <div class="downloadcv-popup-overlay" id="downloadCvView">
+        <div class="downloadcv-popup">
+            <div class="content-box" style="grid-area: box-1">
+                <div class="forh4">
+                    <h4>Tshepang Mmathebe Kgaphola, passionate software developer, seeking internship or employment opportunities.</h4>
+                </div>
+                <div class="name-holder">
+                    <p>@tshepiem.dev</p>
+                </div>
+                <div class="social-icon-links">
+                    <a href="https://www.linkedin.com/in/tshepangkgaphola" target="_blank"><img src="assets\images\icons\linkedin.svg" alt="LinkedIn"  width="100%" height="24px"></a>
+                    <a href="https://github.com/tshepiemdev" target="_blank"><img src="assets\images\icons\github.svg" alt="Github"  width="100%" height="24px"></a>
+                    <a href="https://www.instagram.com/tshepiem.dev" target="_blank"><img src="assets\images\icons\instagram.svg" alt="Instagram" width="100%" height="24px"></a>
+                    <a href="https://x.com/tshepiemdev" target="_blank"><img src="assets\images\icons\twitter-alt.svg" alt="Twitter/X"  width="100%" height="24px"></a>
+                    <a href="https://dribbble.com/tshepiemdev" target="_blank"><img src="assets\images\icons\dribbble.svg" alt="Dribbble"  width="100%" height="24px"></a>
+                </div>
+            </div>
+            <div class="content-box" style="grid-area: box-2">
+                <h1>Fingers crossed you're a recruiter. Love my work?</h1>
+                <p>Download my detailed cv below.</p>
+                <button type="button" id="btnConfirmDownload"><a href="assets\docs\Tshepang Kgaphola CV [tshepiem.dev].docx" download="Tshepang Kgaphola CV">Download CV now</a></button>
+                <div class="close-d-view"><p>Not sure yet?</p><button type="button" id="btnCloseDCvView">Maybe later</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Dialog response id: dialogView -->
+    <div class="dialog-popup-overlay" id="dialogView">
+        <div class="dialog-popup">
+            <div class="img-wrapper">
+                <img src="assets\images\icons\check.svg" alt="success" width="100px" height="100px">
+            </div>
+            <h1>Your mail is successfully delivered in my inbox</h1>
+            <p>Expect a response from me sooner.</p>
+
+            <button type="button" id="btnCloseDialog">Close</button>
+        </div>
+    </div>
+
+    <!-- Error Dialog response id: dialogView2 -->
+    <div class="dialog-popup-overlay2" id="dialogView2">
+        <div class="dialog-popup2">
+            <div class="img-wrapper2">
+                <img src="assets\images\icons\error.svg" alt="error" width="100px" height="100px">
+            </div>
+            <h1>Failed to send<br>your mail</h1>
+            <p id="errorTextLbl">Error: (error). Please retry.</p>
+
+            <button type="button" id="btnCloseDialog2">Close</button>
+        </div>
+    </div>
+</body>
+</html>
